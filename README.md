@@ -110,7 +110,7 @@ graph LR;
   staged -- "git commit" --> tracked;
   staged --"add some changes" --> modified;
   tracked --"add some changes" --> modified;
-  modified --> staged;
+  modified -- "git add" --> staged;
 ```
 
 ## Оформление сообщений к коммитам
